@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public void ok(View view) {
         Double takas = Double.valueOf(taka.getText().toString());
         String d = dollar.getText().toString();
-        if (d.length() != 0){
+        if (d.length() != 0) {
             dollars = Double.valueOf(d);
         }
         Double out = takas * dollars;
