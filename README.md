@@ -7,7 +7,7 @@
 
 ## Bugs
 
-* Data reset after rotation ( `onResume()` not applied)
+* None
 
 ## Future work
 * Get current currency value from online

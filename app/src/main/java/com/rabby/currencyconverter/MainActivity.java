@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         taka = (EditText) findViewById(R.id.taka);
         dollar = (EditText) findViewById(R.id.dollar);
+        dollar.requestFocus();
         textView = (TextView) findViewById(R.id.textView);
     }
 
