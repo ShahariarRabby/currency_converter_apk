@@ -9,6 +9,9 @@
 
 * None
 
+## ScreenShot
+![Alt text](/gitres/icon.png?raw=false "App UI")
+
 ## Future work
 * Get current currency value from online
 
