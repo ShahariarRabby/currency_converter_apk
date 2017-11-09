@@ -23,17 +23,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ok(View view) {
-        Double dollars = 0.0, takas = 0.0;
-        String t = taka.getText().toString();
-        String d = dollar.getText().toString();
         try{
-            dollars = Double.valueOf(d);
-            takas = Double.valueOf(t);
+           Double dollars = Double.valueOf(taka.getText().toString());
+           Double takas = Double.valueOf(dollar.getText().toString());
             Double out = takas * dollars;
             textView.setText(out.toString());
         }catch (Exception e){
-            Double out = takas * dollars;
-            textView.setText(out.toString());
+            textView.setText("");
         }
 
     }
