@@ -26,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
         Double dollars = 0.0, takas = 0.0;
         String t = taka.getText().toString();
         String d = dollar.getText().toString();
-        if (d.length() != 0) {
+        try{
             dollars = Double.valueOf(d);
-        }
-        if (t.length() != 0) {
             takas = Double.valueOf(t);
+            Double out = takas * dollars;
+            textView.setText(out.toString());
+        }catch (Exception e){
+            Double out = takas * dollars;
+            textView.setText(out.toString());
         }
-        Double out = takas * dollars;
-        textView.setText(out.toString());
+
     }
 }
