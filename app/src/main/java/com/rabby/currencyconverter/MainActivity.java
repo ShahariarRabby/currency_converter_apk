@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
     EditText taka;
     EditText dollar;
     TextView textView;
-    Double dollars = 0.0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +23,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ok(View view) {
-        Double takas = Double.valueOf(taka.getText().toString());
+        Double dollars = 0.0, takas = 0.0;
+        String t = taka.getText().toString();
         String d = dollar.getText().toString();
         if (d.length() != 0) {
             dollars = Double.valueOf(d);
+        }
+        if (t.length() != 0) {
+            takas = Double.valueOf(t);
         }
         Double out = takas * dollars;
         textView.setText(out.toString());
