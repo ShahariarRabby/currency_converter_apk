@@ -7,7 +7,7 @@
 
 ## Bugs
 
-* None
+* None (All TestCase Pass!)
 
 ## ScreenRecord 
 ![Alt text](/gitres/screen.gif?raw=false "App UI")
